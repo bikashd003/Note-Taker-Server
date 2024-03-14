@@ -1,6 +1,5 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
-import { User, UserDocument } from './user.model';
 
 export type NoteDocument = Note & Document;
 
@@ -12,8 +11,8 @@ export class Note {
   @Prop({ required: true })
   message: string;
 
-  @Prop({ type: 'ObjectId', ref: 'User' })
-  user: UserDocument;
+  @Prop({ type: 'ObjectId', ref: 'User' }) 
+  user: string; 
 
   @Prop({ default: Date.now }) 
   createdAt: Date;
