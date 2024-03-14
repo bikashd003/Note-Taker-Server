@@ -36,3 +36,10 @@ This backend server provides RESTful APIs for managing notes in the Note Taker a
     npm run start:dev
 6. The server will start running at http://localhost:8000
 
+## API Endpoints
+- POST /user/login: login
+- POST /user/register: register
+- POST /notes/create: Create a new note.
+- GET /notes/get-notes: Get all notes.
+- PUT /notes/update/:id: Update a note by ID.
+- DELETE /notes/delete/:id: Delete a note by ID.
